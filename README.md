@@ -1,4 +1,4 @@
-# iKB-1 block package for iKB-1 Board
+# iKB-1z block package for iKB-1 Board
 
 powered by micro:bit
 
@@ -6,7 +6,7 @@ powered by micro:bit
 
 The package adds support for the [iKB-1](https://inex.co.th/home/product/ikb-1z/) conroller board from Innovative Experiment [INEX](https://inex.co.th).
 
-## !Caution do not use iKB-1 with i-BIT board the I2C Address is same ADC IC on i-BIT board  (0x48)
+## !Caution do not use iKB-1z with i-BIT board the I2C Address is same ADC IC on i-BIT board  (0x48)
 
 ### micro:bit Pin Assignment
 
@@ -18,7 +18,7 @@ The following micro:bit pins are used for communication to iKB-1 to use analog a
 
 ### Motor control Block
 
-Use iKB1's motor block to drives motor forward and backward. The speed motor is adjustable between 0 to 100.
+Use iKB1z's motor block to drives motor forward and backward. The speed motor is adjustable between 0 to 100.
 
 * The dirrection must be select either `Forward` or `Backward`
 * Speed is an integer value between `0 - 100`
@@ -163,6 +163,7 @@ MIT
 ## Supported targets
 
 * for PXT/microbit
+
 
 
 
