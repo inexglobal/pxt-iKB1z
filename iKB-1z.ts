@@ -3,9 +3,9 @@
 */
 enum boardAddress{
     //% block="0x48"
-    iKB1zC=0x48,
+    iKB1z0x48=0x48,
     //% block="0x49"
-    iKB1zO=0x49
+    iKB1z0x49=0x49
 }
 enum iKB1ADC {
     //% block="ADC 0"
