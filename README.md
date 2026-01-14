@@ -2,9 +2,9 @@
 
 powered by micro:bit
 
-![iKB-1](https://github.com/inexglobal/pxt-iKB1z/master/icon.png)
+![iKB-1]([https://github.com/inexglobal/pxt-iKB1z/blob/main/icon.png)
 
-The package adds support for the [iKB-1](https://inex.co.th/shop/ikb-1-board.html) conroller board from Innovative Experiment [INEX](https://inex.co.th).
+The package adds support for the [iKB-1](https://inex.co.th/home/product/ikb-1z/) conroller board from Innovative Experiment [INEX](https://inex.co.th).
 
 ## !Caution do not use iKB-1 with i-BIT board the I2C Address is same ADC IC on i-BIT board  (0x48)
 
@@ -163,4 +163,5 @@ MIT
 ## Supported targets
 
 * for PXT/microbit
+
 
