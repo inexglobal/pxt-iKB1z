@@ -85,7 +85,7 @@ This block is used to read the analog input data from the iKB-1 board. The resol
 * Read the analog input 0 and display the conversion data on micro:bit. User can change the analog channel any time.
 
 ```blocks
-basic.showNumber(iKB1.ADC(iKB1ADC.ADC0))
+basic.showNumber(iKB1z.ADC(iKB1ADC.ADC0))
 ```
 
 * Drive the motors with Forward and Backward by counting speed `0 - 100`
@@ -164,6 +164,7 @@ MIT
 
 ## Fork
 forked from [jcubuntu/pxt-iKB1](https://github.com/jcubuntu/pxt-iKB1). 
+
 
 
 
