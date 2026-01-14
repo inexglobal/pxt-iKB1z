@@ -1,4 +1,4 @@
-# iKB-1z block package for iKB-1 Board
+# iKB-1z block package for iKB-1 and iKB-1z Board
 
 powered by micro:bit
 
@@ -25,9 +25,9 @@ Use iKB1z's motor block to drives motor forward and backward. The speed motor is
 
 
 ```blocks
-iKB1.Motor(iKB1Motor.Forward, 100)
+iKB1z.Motor(iKB1Motor.Forward, 100)
 
-iKB1.Motor(iKB1Motor.Backward, 100)
+iKB1z.Motor(iKB1Motor.Backward, 100)
 ```
 
 ### Spin Block
@@ -38,9 +38,9 @@ Spin block is used to control both motors separately. For example, choose one mo
 * Speed is an integer value between `0 - 100`
 
 ```blocks
-iKB1.Spin(iKB1Spin.Left, 100)
+iKB1z.Spin(iKB1Spin.Left, 100)
 
-iKB1.Spin(iKB1Spin.Right, 100)
+iKB1z.Spin(iKB1Spin.Right, 100)
 ```
 
 ### Turn Block
@@ -51,9 +51,9 @@ The Turn block is used to to control the robot movment by turning. The one motor
 * Speed is an integer value between `0 - 100`
 
 ```blocks
-iKB1.Turn(iKB1Turn.Left, 100)
+iKB1z.Turn(iKB1Turn.Left, 100)
 
-iKB1.Turn(iKB1Turn.Right, 100)
+iKB1z.Turn(iKB1Turn.Right, 100)
 ```
 
 ### Motor Stop Block 
@@ -61,7 +61,7 @@ iKB1.Turn(iKB1Turn.Right, 100)
 The Motor Stop block is used to stop both motors. The speed is set to `0` automatic.
 
 ```blocks
-iKB1.AO()
+iKB1z.AO()
 ```
 
 ### Servo Block
@@ -71,7 +71,7 @@ Use this block for control the servo port 10-15 on iKB-1 board moving degree fro
 * Degree is an integer value between `(-1) - 200`
 
 ```blocks
-iKB1.Servo(sv.SV10, 90)
+iKB1z.Servo(sv.SV10, 90)
 ```
 
 ### ADC Block
@@ -96,11 +96,11 @@ basic.showNumber(iKB1.ADC(iKB1ADC.ADC0))
 let speed = 0
 basic.forever(() => {
     for (let speed = 0; speed <= 100; speed++) {
-        iKB1.Motor(iKB1Motor.Forward, speed)
+        iKB1z.Motor(iKB1Motor.Forward, speed)
         basic.pause(50)
     }
     for (let speed = 0; speed <= 100; speed++) {
-        iKB1.Motor(iKB1Motor.Backward, speed)
+        iKB1z.Motor(iKB1Motor.Backward, speed)
         basic.pause(50)
     }
 })
@@ -110,10 +110,10 @@ basic.forever(() => {
 
 ```blocks
 input.onButtonPressed(Button.A, () => {
-    iKB1.Turn(iKB1Turn.Left, 50)
+    iKB1z.Turn(iKB1Turn.Left, 50)
 })
 input.onButtonPressed(Button.B, () => {
-    iKB1.Turn(iKB1Turn.Right, 50)
+    iKB1z.Turn(iKB1Turn.Right, 50)
 })
 ```
 
@@ -121,10 +121,10 @@ input.onButtonPressed(Button.B, () => {
 
 ```blocks
 input.onButtonPressed(Button.A, () => {
-    iKB1.Spin(iKB1Spin.Left, 50)
+    iKB1z.Spin(iKB1Spin.Left, 50)
 })
 input.onButtonPressed(Button.B, () => {
-    iKB1.Spin(iKB1Spin.Right, 50)
+    iKB1z.Spin(iKB1Spin.Right, 50)
 })
 ```
 
@@ -133,8 +133,8 @@ input.onButtonPressed(Button.B, () => {
 ```blocks
 basic.forever(() => {
     for (let Degree = 0; Degree <= 180; Degree++) {
-        iKB1.Servo(sv.SV10, Degree)
-        iiKB1.Servo(sv.SV11, Degree)
+        iKB1z.Servo(sv.SV10, Degree)
+        iKB1z.Servo(sv.SV11, Degree)
         basic.pause(10)
         while (Degree == 180) {
             Degree = 0
@@ -147,10 +147,10 @@ basic.forever(() => {
 
 ```blocks
 input.onButtonPressed(Button.A, () => {
-    iKB1.Servo(sv.SV10, 90)
+    iKB1z.Servo(sv.SV10, 90)
 })
 input.onButtonPressed(Button.B, () => {
-    iKB1.Servo(sv.SV10,-1)
+    iKB1z.Servo(sv.SV10,-1)
 })
 ```
 
