@@ -125,7 +125,7 @@ namespace iKB1z {
     */
     //% blockId="ikb1_set_Address" block="set Address for iKB1z %boardAddress"
     //% weight=62
-    export function setADC_Address(ADDRESS : boardAddress) {
+    export function set_Address(ADDRESS : boardAddress) {
         ADC_ADDRESS=ADDRESS
     }
     /**
