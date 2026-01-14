@@ -69,7 +69,7 @@ Use this block for control the servo port 10-15 on iKB-1 board moving degree fro
 * Degree is an integer value between `(-1) - 200`
 
 ```blocks
-iKB1z.Servo(sv.SV10, 90)
+iKB1z.servo(sv.SV10, 90)
 ```
 
 ### ADC Block
@@ -85,7 +85,7 @@ This block is used to read the analog input data from the iKB-1 board. The resol
 * Read the analog input 0 and display the conversion data on micro:bit. User can change the analog channel any time.
 
 ```blocks
-basic.showNumber(iKB1.ADC(iKB1ADC.ADC0))
+basic.showNumber(iKB1z.ADC(iKB1ADC.ADC0))
 ```
 
 * Drive the motors with Forward and Backward by counting speed `0 - 100`
@@ -129,10 +129,10 @@ input.onButtonPressed(Button.B, () => {
 * Example for Servo, drive the servo motor's movement angle at Servo output 10 and 11 from `0 - 180` and back to 0 to restart again. 
 
 ```blocks
-basic.forever(() => {
+basic.forever(function () {
     for (let Degree = 0; Degree <= 180; Degree++) {
-        iKB1z.Servo(sv.SV10, Degree)
-        iKB1z.Servo(sv.SV11, Degree)
+        iKB1z.servo(sv.SV10, Degree)
+        iKB1z.servo(sv.SV11, Degree)
         basic.pause(10)
         while (Degree == 180) {
             Degree = 0
@@ -145,10 +145,10 @@ basic.forever(() => {
 
 ```blocks
 input.onButtonPressed(Button.A, () => {
-    iKB1z.Servo(sv.SV10, 90)
+    iKB1z.servo(sv.SV10, 90)
 })
 input.onButtonPressed(Button.B, () => {
-    iKB1z.Servo(sv.SV10,-1)
+    iKB1z.servo(sv.SV10,-1)
 })
 ```
 
