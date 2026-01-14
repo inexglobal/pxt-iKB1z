@@ -6,8 +6,6 @@ powered by micro:bit
 
 The package adds support for the [iKB-1z](https://inex.co.th/home/product/ikb-1z/) conroller board from Innovative Experiment [INEX](https://inex.co.th).
 
-## !Caution do not use iKB-1z with i-BIT board the I2C Address is same ADC IC on i-BIT board  (0x48)
-
 ### micro:bit Pin Assignment
 
 The following micro:bit pins are used for communication to iKB-1 to use analog and digital sensors, DC motor drivers and servo motors:
