@@ -1,0 +1,19 @@
+{
+    "name": "ikb1z",
+    "version": "1.1.2",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "radio": "*"
+    },
+    "files": [
+        "README.md",
+        "main.ts",
+        "iKB-1.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "installedVersion": "workspace:f7821051-6faf-4cf3-36f4-af1dea0d2a4d"
+}
